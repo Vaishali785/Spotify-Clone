@@ -1,0 +1,10 @@
+.card{
+    background: #121212;
+     /* var(--blur-btn-bg); */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+strong{
+    font-size: clamp(0.8125rem, 0.1228rem + 1.1136vw, 1.125rem);
+}

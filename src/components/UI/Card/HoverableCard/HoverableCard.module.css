@@ -1,0 +1,11 @@
+.hover-card{
+    background-color: var(--card-hover);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-card:hover{
+    background-color: var(--card-hovered);
+}
