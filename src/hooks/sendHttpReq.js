@@ -24,7 +24,7 @@ const useSendHttpRequest = () => {
             }
             setIsLoading(false);
             const response = await fetchCall.json();
-            console.log(response);
+            // console.log(response);
             setResponse(response);
             // setTimeout(() => {
 

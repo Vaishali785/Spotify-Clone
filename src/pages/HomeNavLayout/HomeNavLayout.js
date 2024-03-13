@@ -7,33 +7,40 @@ import { Outlet } from 'react-router-dom';
 import useSendHttpRequest from '../../hooks/sendHttpReq';
 import { getUserRecentlyPlayed } from '../../utilities/data/SpotifyApiCalls';
 import { useSelector } from 'react-redux';
+import NotificationCard from '../../components/UI/NotificationCard/NotificationCard';
 
 const HomeNavLayout = () => {
-    const { isLoading, response, error, fetchFunction } = useSendHttpRequest();
-    const startTime = useSelector(state => state.auth.time_token_generation);
+    // const { isLoading, response, error, fetchFunction } = useSendHttpRequest();
+    // const startTime = useSelector(state => state.auth.time_token_generation);
     /**
      * functions are objects in JS and new object is created every time the function is re-executed even though it is the same object(function), this creates infinite loop here. 
      * So to avoid this infinite loop we are using useCallback in the custom hook. 
      */
-    console.log(startTime)
-    useEffect(() => {
-        const config = {
-            url: getUserRecentlyPlayed(1, startTime),
-            method: "GET",
-        }
-        fetchFunction(config);
-    }, [fetchFunction, startTime])
-    console.log("current song")
-    console.log(response);
+    // console.log(startTime)
+    // useEffect(() => {
+    //     const config = {
+    //         url: getUserRecentlyPlayed(1, startTime),
+    //         method: "GET",
+    //     }
+    //     fetchFunction(config);
+    // }, [fetchFunction, startTime])
+    // console.log("current song")
+    // console.log(response);
+    const notification = useSelector(state => state.notification.showNotification);
+    const notiContent = useSelector(state => state.notification.content);
     return (
-        <div className={classes.home}>
-            <Sidebar />
-            <div className={classes["main-wrap"]}>
-                <Header />
-                <Outlet />
+        <>
+            <div className={classes.home}>
+                <Sidebar />
+                <div className={classes["main-wrap"]}>
+                    <Header />
+                    <Outlet />
+                </div>
+                <Footer />
+                <div className={classes['footer-adjustment']} />
             </div>
-            <Footer />
-        </div>
+            {notification && <NotificationCard content={notiContent} />}
+        </>
     )
 }
 

@@ -1,5 +1,6 @@
 .hover-card{
-    background-color: var(--card-hover);
+    background-color: #232323; 
+    /* //var(--card-hover); */
     padding: 1rem;
     border-radius: 5px;
     transition: all .5s ease-in-out;
@@ -8,4 +9,10 @@
 
 .hover-card:hover{
     background-color: var(--card-hovered);
+
+
+    /* background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: saturate(180%) blur(5px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2); */
 }
