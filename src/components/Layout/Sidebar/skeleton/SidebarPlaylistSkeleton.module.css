@@ -1,0 +1,52 @@
+.skeleton-sidebar-playlist__container{
+    margin-top: 1rem;
+}
+
+.skeleton-sidebar-playlist__list{
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+}
+.skeleton-sidebar-playlist__img{
+    width: 40px;
+    height: 40px;
+}
+
+.skeleton-sidebar-playlist-item__name{
+    height: 20px;
+    width: 10vw;
+}
+
+.skeleton-sidebar-playlist-item__type{
+    height: 13px;
+    width: 8vw;
+    margin-top: .3rem;
+}
+
+/* ========================================================================================================= */
+/* ================================================================ MOBILE LIBRARY SKELETON========================================================= */
+/* ========================================================================================================= */
+
+.skeleton-mobile-library{
+    overflow-y: overlay;
+    max-height: 90vh;
+    margin-top: 0;
+}
+
+.skeleton-mobile-library .skeleton-sidebar-playlist__img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.skeleton-mobile-library .skeleton-sidebar-playlist-item__name {
+    height: 25px;
+    width: 55vw;
+}
+
+
+.skeleton-mobile-library .skeleton-sidebar-playlist-item__type {
+    height: 15px;
+    width: 35vw;
+    margin-top: .3rem;
+}
