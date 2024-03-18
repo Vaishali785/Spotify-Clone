@@ -1,0 +1,191 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+/* --------------------- SIDEBAR LOGO  --------------------- */
+.sidebar-logo{
+    text-align: center;
+    width: 80%;
+}
+.sidebar-logo img{
+    width: 100%;
+}
+
+/* --------------------- SIDEBAR NAV --------------------- */
+.sidebar-nav {
+    list-style: none;
+}
+.sidebar-nav__list{
+    opacity: .7;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+}
+
+.sidebar-nav__list .sidebar-nav__listIcon{
+    font-size: 1.7rem;
+}
+
+.sidebar-nav__link{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: .5rem;
+}
+.sidebar-nav__text{
+    font-size: clamp(0.6125rem, -0.1531rem + 1.559vw, 1.15rem);
+    font-weight: 300;
+}
+
+.sidebar-nav-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar-top-sticky{
+    position: sticky; 
+    position: -webkit-sticky;
+    top: 10px;
+}
+.sidebar-bottom-sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 10px;
+}
+
+/* --------------------- SIDEBAR NAV PLAYLIST --------------------- */
+.sidebar-playlist__container{
+    margin-top: 1rem;
+    overflow-y: overlay;
+}
+
+.sidebar-playlist__fixed-height{
+    height: 43vh;
+}
+.sidebar-playlist__full-height{
+    height: 100vh;
+}
+
+.sidebar-playlist__list{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* margin-bottom: .3rem; */
+    padding: .5rem;
+}
+
+.sidebar-playlist__img{
+    width: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sidebar-playlist__link{
+    width: 100%;
+    text-decoration: none;
+}
+.sidebar-playlist-item__name{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-playlist-item__type{
+    font-size: 11px;
+    margin-top: .3rem;
+    color: white;
+    opacity: .6;
+}
+
+
+
+.sidebar-playlist__liked-icon{
+    background: var(--liked-songs-gradient);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.sidebar-playlist__liked-icon svg{
+    fill: white;
+}
+
+
+
+/* ------------ SIDEBAR NAV - HOVER -------------*/
+.sidebar-nav__list:hover {
+    opacity: 1;
+
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIDEBAR MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 991px) {
+    .sidebar {
+        position: fixed;
+        left: 0;
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 991px)and (max-width: 1200px) {
+    .sidebar{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================================================= */
+/* ========================================================================== MOBILE LIBRARY ========================================================= */
+/* ========================================================================================================= */
+
+.mobile-library.sidebar-playlist__container {
+    margin-top: 0rem;
+}
+
+.mobile-library .sidebar-playlist__list {
+    padding: .5rem;
+}
+
+.mobile-library .sidebar-playlist__liked-icon,
+.mobile-library .sidebar-playlist__img {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+    /* border-radius: 3px;
+    overflow: hidden; */
+}
+
+.mobile-library .sidebar-playlist-item__name {
+    font-size: 18px ;
+    /* , 20px);  */
+    /* calc(3vw + 1rem);  */
+}
+
+.mobile-library .sidebar-playlist-item__type {
+    font-size: 13px;
+}
