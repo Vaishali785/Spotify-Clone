@@ -1,0 +1,120 @@
+.account-warning-modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+
+.account-warning-modal__heading {
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.account-warning-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    min-height: 50vh;
+    background: #1db954;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    /* border: 1px solid rgba(255, 255, 255, .5); */
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, .3);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.account-warning-modal li span {
+    font-size: 1rem;
+    line-height: 2;
+    /* list-style: none; */
+}
+
+
+
+.credentials {
+    /* text-align: center; */
+    margin-top: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+
+.login-btn {
+    padding: 1.3rem 3.5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+
+    color: #1db954;
+    background: white;
+    align-self: center;
+    margin-top: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.login-btn:hover{
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+    transform: scale(1.05);
+}
+
+
+.account-warning-modal__close{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    color: white;
+    background: #1db954;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.account-warning-modal__close:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .4);
+    transform: scale(1.05);
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 991px) {
+    .account-warning-modal-bg {
+        height: 100svh;
+    }
+    .account-warning-modal{
+        padding: 2rem;
+        width: 90vw;
+        height: auto;
+        min-height: fit-content;
+        /* list-style-position: inside; */
+    }
+    .account-warning-modal li {
+        margin-bottom: 1.3rem;
+    }
+    .account-warning-modal li span {
+        line-height: 1.5;
+    }
+    .credentials{
+        line-height: 1.2;
+    }
+}
