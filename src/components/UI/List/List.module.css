@@ -1,0 +1,42 @@
+.list {
+    position: absolute;
+    right: 100%;
+    background: var(--card-bg);
+    top: 0rem;
+    max-height: 300px;
+    padding-block: .5rem;
+    min-width: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 5px;
+}
+
+.list_item {
+    padding: 1rem 1.5rem;
+    list-style: none;
+}
+
+.list_heading{
+    display: none;
+}
+
+
+@media (hover: none) {
+    .list {
+        position: fixed;
+        left: 0;
+        top: -40%;
+        bottom: 0;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding-block: 1rem;
+        max-height: unset;
+        padding-block: 1.5rem;
+        padding: 1rem;
+    }
+    .list_heading{
+        display: block;
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+    }
+}
