@@ -261,3 +261,16 @@ html{
         margin-top: 2rem;
     }
 }
+
+
+/* ======================================== MODAL POSITION CHANGE FOR LAST 5 ITEMS  ====================================================== */
+
+@media (hover: hover) {
+    .song-item-row:nth-last-child(-n+4) .modal-position{
+        background-color: green;
+        right: 35px;
+        bottom: 80%;
+        top: unset;
+    }
+    
+}
