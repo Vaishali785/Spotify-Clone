@@ -10,10 +10,12 @@
     object-fit: contain;
 }
 
-.login-btn {
+.start-btn {
     color: white;
     background-color: #1db954;
-    padding: 1rem 2rem;
+    padding: 1.3rem 2.5rem;
     border-radius: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    cursor: pointer;
 }
