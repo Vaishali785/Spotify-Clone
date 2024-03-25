@@ -1,10 +1,7 @@
-import React, { Suspense, useEffect } from 'react'
-import { getUserPlaylist } from '../../../utilities/data/SpotifyApiCalls';
-import useSendHttpRequest from '../../../hooks/sendHttpReq';
+import React from 'react'
 import classes from './Sidebar.module.css';
 import capitalizeFirstLetter from '../../../utilities/general/CapitalizeFirstLetter';
 import SidebarPlaylistSkeleton from './skeleton/SidebarPlaylistSkeleton';
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import useFetchUserPlaylist from '../../../hooks/fetchUserPlaylist';
 import GradeRoundedIcon from '@mui/icons-material/GradeRounded';
