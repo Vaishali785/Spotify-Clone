@@ -1,0 +1,33 @@
+.audio-slider{
+
+}
+
+
+.audio-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.thumb img{
+    width: 50px;
+}
+
+.audio-text{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+
+.audio-name{
+    font-size: 16px;
+}
+
+.audio-singer{
+    font-size: 12px;
+    color: white;
+    opacity: .7;
+    /* margin-top: .5rem; */
+}

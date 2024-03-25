@@ -1,0 +1,72 @@
+.controls-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 2rem;
+}
+
+.controls{}
+
+.volume{
+    position: relative;
+    /* cursor: pointer; */
+}
+.volume input{
+    writing-mode: vertical-lr !important;
+    width: 5px;
+    height: 128px;
+    right: 12px;
+    bottom: 40px;
+    display: none;
+    
+}
+
+.volume input::before{
+    transform: none;
+        
+        height: var(--range-progress);
+        width: 2px
+}
+
+.play-btn{
+    border: navajowhite;
+    /* border: 1px solid white; */
+    padding: 0.6rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.play-btn svg{
+    fill: black;
+}
+
+.volume-btn{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.volume-btn svg{
+    width: 35px;
+    height: 35px;
+}
+
+.volume:hover input,
+.volume:hover input:hover{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 768px) {
+    .volume{
+        display: none;
+    }
+}

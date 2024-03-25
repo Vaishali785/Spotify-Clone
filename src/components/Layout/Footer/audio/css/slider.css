@@ -1,0 +1,119 @@
+/* =========================
+Custom Input range 
+=============================*/
+
+/* Input range - chrome and safari */
+
+input[type="range"] {
+    --range-progress: 0;
+    
+    -webkit-appearance: none;
+    position: relative;
+    background:#ccc;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+/* Input range - firefox */
+input[type="range"]::-moz-range-track {
+    position: relative;
+    background:#ccc;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* played progress length - Chrome & safari*/
+input[type="range"]::before {
+    content: '';
+    height: 5px;
+    background: var(--theme-gradient);
+    width: var(--range-progress);
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.volume input[type="range"]::before{
+    transform: rotate(-90deg);
+    /* left: -65%; */
+    /* writing-mode: vertical-lr; */
+    height: var(--range-progress);
+    width: 2px;
+}
+
+/* played progress length - firefox */
+input[type="range"]::-moz-range-progress {
+    background: #f50;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    height: 5px;
+}
+
+/* slider thumb - chrome and safari */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    /* opacity: 0; */
+}
+
+/* input[type="range"]:hover::-webkit-slider-thumb {
+    opacity: 1;
+} */
+
+/* dragging thumb - chrome and safari */
+input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
+
+/* slider thumb - firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #f50;
+    cursor: pointer;
+    border: transparent;
+    position: relative;
+}
+/* dragging thumb - firefox */
+input[type="range"]:active::-moz-range-thumb {
+    transform: scale(1.2);
+}
+
+
+/*============== customized by me ========================*/
+
+.volume input[type="range"]{
+    /* position: absolute;
+    top: -45px;
+    left: -65%;
+    width: 250%; */
+    transform: rotate(-90deg);
+    top: -75px;
+    left: -100%;
+    width: 130px;
+    /* height: 100px;
+    width: 2px; */
+    /* writing-mode: vertical-lr !important; */
+}
+
+.progress input[type="range"]{
+    height: 4px;
+}
+
+.progress input[type="range"]::before{
+    height: 4px;
+}
