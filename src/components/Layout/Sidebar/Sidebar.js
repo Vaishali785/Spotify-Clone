@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import IMAGES from '../../../assets/images';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import QueueMusicRoundedIcon from '@mui/icons-material/QueueMusicRounded';
-
 import { SvgIcon } from '@mui/material';
 import { Link } from 'react-router-dom';
 import classes from './Sidebar.module.css';
