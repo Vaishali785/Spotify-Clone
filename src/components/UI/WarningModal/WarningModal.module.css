@@ -63,7 +63,7 @@
 
     color: #1db954;
     background: white;
-    align-self: center;
+    align-self: flex-start;
     margin-top: 2rem;
     transition: all .5s ease-in-out;
 }
