@@ -13,9 +13,21 @@
 .start-btn {
     color: white;
     background-color: #1db954;
-    padding: 1.3rem 2.5rem;
+    padding: 1.3rem 3rem;
     border-radius: 2rem;
     font-size: 1.2rem;
     text-decoration: none;
     cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.warning{
+    position: fixed;
+    bottom: 0;
+    background-color: #f0939399;
+    padding: .6rem 2rem;
+    /* border-radius: 10px; */
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
 }
