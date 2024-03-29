@@ -135,6 +135,7 @@
         left: 0;
         width: 25vw;
     }
+    
 }
 
 @media screen and (min-width: 991px)and (max-width: 1200px) {
@@ -147,6 +148,13 @@
     .sidebar {
         display: none;
     }
+        .sidebar-playlist__full-height {
+            height: fit-content;
+        }
+    
+        .sidebar-playlist__container {
+            overflow: unset;
+        }
 }
 
 
