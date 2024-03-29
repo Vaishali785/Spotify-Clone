@@ -1,10 +1,17 @@
 import React from 'react'
-import { useRouteError } from 'react-router-dom';
+import Error404 from '../ErrorPages/404/Error404';
+import classes from './ErrorPage.module.css';
+
 
 const ErrorPage = () => {
-    const error = useRouteError();
+    // const error = useRouteError();
+
     return (
-        <div>404Page</div>
+        <div>
+            <div className={classes['error-page-wrap']}>
+                <Error404 />
+            </div>
+        </div>
     )
 }
 
