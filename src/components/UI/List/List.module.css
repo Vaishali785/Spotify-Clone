@@ -24,7 +24,7 @@
     .list {
         position: fixed;
         left: 0;
-        top: -40%;
+        top: -30vh;
         bottom: 0;
         width: 100%;
         border-top-left-radius: 25px;
