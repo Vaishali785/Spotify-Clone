@@ -3,7 +3,7 @@ import IMAGES from '../../../assets/images';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import { SvgIcon } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import classes from './Sidebar.module.css';
 import home from '../../../pages/Home/Home.module.css';
 import Card from '../../UI/Card/Card';
@@ -27,12 +27,12 @@ export default function Sidebar() {
                 <ul className={classes['sidebar-nav']}>
                     {icons.map(icon => (
                         <li className={classes["sidebar-nav__list"]} key={icon.url}>
-                            <Link to={icon.url} className={classes['sidebar-nav__link']}>
+                            <NavLink end to={icon.url} className={(({ isActive }) => isActive ? `${classes['sidebar-nav__link']} ${classes['active']}` : classes['sidebar-nav__link'])}>
                                 <SvgIcon component={icon.icon} className={classes['sidebar-nav__listIcon']} />
                                 <span className={classes['sidebar-nav__text']}>
                                     {icon.name}
                                 </span>
-                            </Link>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
