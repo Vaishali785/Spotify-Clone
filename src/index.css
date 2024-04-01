@@ -274,3 +274,10 @@ html{
     }
     
 }
+
+
+
+/* don't show copyright info for mobile library page  */
+.mobile-library-copyright ~ .copyright{
+    display: none;
+}
