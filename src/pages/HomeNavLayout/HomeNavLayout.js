@@ -21,10 +21,6 @@ const HomeNavLayout = () => {
                 <div className={classes["main-wrap"]}>
                     <Header />
                     <Outlet />
-                    <div className={`${classes['copyright-info']} copyright`}>
-                        <span>&copy; 2024. All rights reserved.</span>
-                        <span>Developed by Vaishali</span>
-                    </div>
                 </div>
                 <Footer />
                 <div className={classes['footer-adjustment']} />
