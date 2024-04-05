@@ -16,15 +16,11 @@ const Header = () => {
 
 
     const handleLogOut = () => {
-        console.log("click");
-        console.log(localStorage.getItem("time"));
-
         sessionStorage.removeItem("time");
         sessionStorage.removeItem("code");
         sessionStorage.removeItem("refresh");
         sessionStorage.removeItem("lastPlayed");
         window.location.pathname = '';
-        console.log(window.location);
         // window.location.reload();
     }
 
