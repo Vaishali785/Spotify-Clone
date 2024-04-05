@@ -1,0 +1,120 @@
+@keyframes showProfileImg {
+    0% {
+        display: flex;
+        position: absolute;
+        right: 0%;
+        visibility: hidden;
+    }
+
+    25% {
+        display: flex;
+        position: absolute ;
+        right: 10%;
+
+    }
+
+    50% {
+        display: flex;
+        position: absolute;
+        right: 25%;
+    }
+
+    75% {
+        display: flex;
+        position: absolute ;
+        right: 54%;
+    }
+
+    100% {
+        display: flex;
+        /* position:absolute;
+        left: 7px; */
+    }
+}
+
+.header-profile-btn__img {
+    object-fit: cover;
+    width: 100%;
+    /* height: 100%; */
+    /* position: absolute !important; */
+    
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+    /* margin-left: 7px; */
+    
+    animation: showProfileImg 0.5s cubic-bezier(0, -0.32, 1, 0.54) 1 ;
+    animation-fill-mode: forwards;
+}
+
+.profile-btn-wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-profile-btn__name {
+    font-weight: bold;
+    display: inline-block;
+    flex: 1;
+    /* margin-left: 3rem; */
+}
+.hide-content {
+    display: none !important;
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media screen and (max-width: 767px) {
+    .header-profile-btn__img{
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: 7px !important;
+    }
+
+}
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SKELETON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+.skeleton-header-profile-btn__name {
+    width: 50%;
+    height: 20px;
+    background: var(--card-hover-2);
+}
+
+.skeleton-header-profile-btn__img {
+    width: 35px;
+    aspect-ratio: 1/1;
+    background: var(--card-hover-2);
+
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 7px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .skeleton-header-profile-btn__img {
+        width: 30px;
+    }
+    .skeleton-header-profile-btn__name{
+        width: 55px;
+        margin-right: 7px;
+    }
+}
