@@ -1,0 +1,13 @@
+.main{
+    background: #121212;
+    border-radius: var(--card-border-radius);
+    padding: 1rem;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width:390px) {
+    .main{
+        padding: .5rem;
+    }
+}
