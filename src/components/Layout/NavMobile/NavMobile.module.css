@@ -1,0 +1,81 @@
+.mobile-menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 990px) {
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.mobile-menu .active{
+    transition: all 2s ease-in-out;
+}
+
+
+
+
+
+.mobile-menu{
+    padding-block: .5rem;
+}
+.mobile-menu-list{
+    display: flex;
+    justify-content: space-around;
+}
+.mobile-menu-list-item{
+    list-style: none;
+    width: 100%;
+}
+.mobile-menu-list-item__link.active.text-white-hover{
+    opacity: 1;
+}
+.mobile-menu-list-item__content{
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+    flex-direction: column-reverse;
+    justify-content: center;
+    /* color: white; */
+}
+.mobile-menu-list-item__text{
+    font-size: 10px;
+}
+.mobile-menu-list-item__icon svg{
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-menu-list-item__text-search{
+    position: relative;
+}
+
+.mobile-menu-list-item__text-search::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 31%;
+    top: 27%;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.text-white{
+    color: white;
+    opacity: 1;
+}
+
+.text-opaque-white{
+    color: white;
+    opacity: .6;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
