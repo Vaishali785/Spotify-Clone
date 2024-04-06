@@ -1,0 +1,29 @@
+.dancing-tracks-wrap{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    gap: 2px;
+    /* border: 1px solid white; */
+    align-items: flex-end;
+}
+
+.dancing-tracks{
+    display: inline-block;
+    width: 6px;
+    height: 100%;
+    background: var(--theme-gradient);
+    animation: dance 1s  ease-in-out infinite alternate;
+    animation-delay: var(--i) ;
+}
+
+@keyframes dance {
+    0%{
+        height: var(--min-height);
+    }
+    /* 50%{
+    } */
+    100%{
+        height:var(--max-height);
+        /* height: var(--min-height); */
+    }
+}
