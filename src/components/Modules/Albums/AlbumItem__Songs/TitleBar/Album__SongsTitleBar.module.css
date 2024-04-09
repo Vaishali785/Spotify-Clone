@@ -1,0 +1,77 @@
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    grid-gap: 1.5rem;
+}
+
+.album__songs_title-bar {
+    padding-top: 1.5rem;
+}
+
+
+.album-definition-bar {
+    display: grid;
+    grid-template-columns: .2fr 2fr .3fr .2fr;
+    align-items: center;
+    opacity: .6;
+    font-size: 13px;
+    /* margin-bottom: 1.5rem; */
+}
+
+.album-definition-bar__bottomBorder {
+    margin-top: 0.5rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+}
+
+
+.album-definition-bar__time {
+    justify-self: center;
+}
+
+.album-definition-bar__time svg {
+    width: 1.3rem !important;
+}
+
+.album-definition-bar__title {
+    margin-left: 10px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media screen and (min-width: 501px) and (max-width:780px) {
+    .album-definition-bar{
+        grid-template-columns: 1.2fr  .2fr .1fr;
+        padding-inline: 1rem;
+    }
+    .album-definition-bar__index{
+        display: none;
+    }
+    /* .album-definition-bar__title{
+        margin-left: 1rem;
+    } */
+}
+
+@media screen and (max-width: 780px) {
+    .album-definition-bar__title {
+        /* margin-left: 2rem; */
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .album-definition-bar{
+        grid-template-columns: 1.8fr .2fr;
+        padding-inline: 1rem;
+    }
+    .album-definition-bar__index {
+        display: none;
+    }
+    .album-definition-bar__title {
+        margin-left: 1rem;
+    }
+}

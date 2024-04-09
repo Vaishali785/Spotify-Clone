@@ -1,0 +1,158 @@
+.album-row {
+    display: grid;
+    grid-template-columns: .2fr 2fr 0.3fr 0.3fr .2fr;
+    align-items: center;
+    padding: 1rem;
+    /* margin-bottom: .3rem; */
+}
+
+.album-row__index,
+.justify-self-center {
+    justify-self: center;
+}
+
+.album-row__title {
+    font-size: 16px;
+}
+
+.album-row__img {
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px solid white;
+    /* border-radius: 2px; */
+    /* overflow: hidden; */
+}
+
+.album-row__options {}
+
+.album-row__songDetails {
+    margin-left: .7rem;
+}
+
+.album-row__artists {
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.album-row__artistName {
+    display: inline-block;
+
+}
+
+.album-row__song {
+    display: flex;
+    align-items: center;
+}
+
+/* -----------low opacity ----------- */
+.album-row__artistSeparator,
+.album-row__time,
+.album-row__options,
+.album-row__index,
+.album-row__like {
+    opacity: .6;
+}
+
+.album-row__album {
+    font-size: .8rem;
+    opacity: .8;
+    padding-inline: 10px;
+}
+
+/* ----------like button---------------- */
+.album-row__like,
+.album-row__likeSvg {
+    transition: all .2s ease-in-out;
+}
+
+.album-row__like:hover {
+    opacity: 1;
+}
+
+.album-row__like:hover .album-row__likeSvg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.album-row__liked .album-row__likeSvgGreen{
+    fill: var(--theme-color-like);
+    opacity: 1;
+}
+
+.album-row__artistLink{}
+
+.current-playing .album-row__title {
+    color: var(--theme-color);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SONG ROW MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width:780px) {
+    .album-row {
+        grid-template-columns: .2fr 2fr .4fr .4fr .2fr;
+    }
+
+    .album-row__album {
+        display: none;
+    }
+    .album-row__time {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:780px) {
+    .album-row {
+        grid-template-columns: .1fr 1.2fr .2fr .1fr;
+        padding: .6rem 1rem;
+    }
+
+    .album-row__song {
+        /* margin-left: 1rem; */
+    }
+
+    .album-row__songDetails {
+        /* margin-left: 1rem; */
+    }
+
+    /* .album-row__index {
+        display: none;
+    } */
+
+    .album-row__options {
+        justify-self: flex-end;
+    }
+    .album-row__artists {
+        margin-top: .3rem;
+    } 
+    .album-row__artistLink{
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .album-row {
+        grid-template-columns: .2fr 1.8fr .2fr;
+        padding: .6rem 1rem;
+    }
+
+    /* .album-row__index  */
+    .album-row__like,
+    .album-row__liked {
+        display: none;
+    }
+
+    .album-row__song {
+        /* margin-left: 1rem; */
+    }
+
+    .album-row__options {
+        /* justify-self: flex-end; */
+    }
+    .album-row__artists {
+        margin-top: .3rem;
+    }
+    .album-row__artistLink {
+        pointer-events: none;
+    }
+}
