@@ -1,0 +1,120 @@
+.artist_header {
+    height: 40vh;
+    background: linear-gradient(45deg, white, transparent);
+    padding: 2rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.artist_header__cover-img {
+    /* width: 20%; */
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    /* border: 1px solid white; */
+    filter: drop-shadow(4px 4px 10px black);
+    object-fit: cover;
+}
+
+.artist_header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: stretch; */
+}
+
+.artist_header__sub-heading {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* font-weight: 300; */
+}
+
+.artist_header__heading {
+    font-size: min(4vw, 6vw);
+    margin-top: .5rem;
+    /* font-size: clamp(3rem, 3rem + 3vw, 4vw); */
+    font-weight: 900;
+    line-height: 1;
+}
+
+.artist_header__description {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-left: 5px;
+    font-size: 13px;
+    opacity: .7;
+}
+
+.artist_header__others,
+.artist_header__owner {
+    display: flex;
+    align-items: center;
+}
+
+.artist_header__others {
+    gap: 1rem;
+    font-size: 13px;
+    margin-bottom: .5rem;
+}
+
+.artist_header__owner-img {
+    width: 30px;
+}
+
+.artist_header__owner {
+    font-weight: bold;
+}
+
+.artist_header__other-separator {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+}
+
+.artist_header__artists {}
+
+.artist_header__song-count {}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (min-width: 550px) and (max-width: 991px) {
+    .artist_header__sub-heading {
+        font-size: max(.7rem,1vw);
+    }
+    .artist_header__heading {
+        font-size: 6vw;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .artist_header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .artist_header__cover-img {
+        width: 25vh;
+        height: 25vh;
+        object-fit: cover;
+    }
+
+    .artist_header__heading  {
+        font-size: max(6vw,2rem);
+    }
+    .artist_header__sub-heading ,
+    .artist_header__description{
+        display: none;
+    }
+}
