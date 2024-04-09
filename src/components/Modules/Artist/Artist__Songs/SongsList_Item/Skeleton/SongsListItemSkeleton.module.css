@@ -1,0 +1,139 @@
+.skeleton-artist-row {
+    display: grid;
+    grid-template-columns: .2fr 2fr 0.3fr 0.3fr .2fr;
+    align-items: center;
+    padding: 1rem;
+    /* margin-bottom: .3rem; */
+}
+
+.skeleton-artist-row__index {
+    justify-self: center;
+    width: 3vw;
+    height: 100%;
+}
+
+.skeleton-artist-row__title {
+    width: 37vw;
+    height: 35px;
+    /* font-size: 16px; */
+}
+
+.skeleton-artist-row__img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.skeleton-artist-row__songDetails {
+    margin-left: .7rem;
+}
+
+.skeleton-artist-row__artists {
+    margin-top: .5rem;
+}
+
+
+.skeleton-artist-row__song {
+    display: flex;
+    align-items: center;
+}
+
+/* -----------low opacity ----------- */
+
+.skeleton-artist-row__time,
+.skeleton-artist-row__options,
+.skeleton-artist-row__like {
+    width: 5.5vw;
+    height: 95%;
+    justify-self: center;
+    align-self: flex-start;
+}
+.skeleton-artist-row__options {
+    width: 3vw;
+}
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SONG ROW MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 991px) {
+    .skeleton-artist-row__time,
+    .skeleton-artist-row__like {
+        width: 8vw;
+    }
+
+    .skeleton-artist-row__options {
+        width: 5vw;
+    }
+    .skeleton-artist-row__title {
+        width: 45vw;
+        height: 35px;
+    }
+}
+
+
+@media screen and (min-width:780px) and (max-width: 991px) {
+    .skeleton-artist-row__songDetails {
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:780px) {
+    .skeleton-artist-row {
+        grid-template-columns: 1.2fr .2fr .2fr .1fr;
+        padding: .6rem 1rem;
+    }
+
+    .skeleton-artist-row__song {
+        margin-left: 1rem;
+    }
+
+    .skeleton-artist-row__songDetails {
+        margin-left: 1rem;
+    }
+
+    .skeleton-artist-row__index {
+        display: none;
+    }
+
+    .skeleton-artist-row__options {
+        justify-self: flex-end;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .skeleton-artist-row {
+        grid-template-columns: 1.5fr .2fr .2fr;
+        padding: .6rem 1rem;
+    }
+
+    .skeleton-artist-row__like,
+    .skeleton-artist-row__index {
+        display: none;
+    }
+
+    .skeleton-artist-row__song {
+        margin-left: 1rem;
+    }
+
+    .skeleton-artist-row__options {
+        justify-self: flex-end;
+    }
+
+    .skeleton-artist-row__time,
+    .skeleton-artist-row__options {
+        height: 75%;
+        justify-self: center;
+        align-self: center;
+    }
+    .skeleton-artist-row__time{
+        width: 9vw;
+        
+    }
+    .skeleton-artist-row__options {
+        width: 6vw;
+    }
+}
