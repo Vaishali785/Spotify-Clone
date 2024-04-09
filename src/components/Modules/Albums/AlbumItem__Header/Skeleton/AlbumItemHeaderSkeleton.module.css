@@ -1,0 +1,135 @@
+.skeleton_album_header {
+    height: 40vh;
+    /* background: linear-gradient(45deg, white, transparent); */
+    padding: 2rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.skeleton_album_header__cover-img {
+    /* width: 20%; */
+    aspect-ratio: 1/1;
+    /* border: 1px solid white; */
+    /* filter: drop-shadow(4px 4px 10px black); */
+}
+
+.skeleton_album_header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: stretch; */
+}
+
+.skeleton_album_header__sub-heading {
+    width: 10vw;
+    height: 20px;
+    /* font-weight: 300; */
+}
+
+.skeleton_album_header__heading {
+    width: 35vw;
+    height: 45px;
+    margin-top: .5rem;
+}
+
+/* .skeleton_album_header__description {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-left: 5px;
+    font-size: 13px;
+    opacity: .7;
+} */
+
+/* .skeleton_album_header__owner{
+    width: 20vw;
+}
+.skeleton_album_header__songs{
+    width: 10vw;
+} */
+
+.skeleton_album_header__owner,
+.skeleton_album_header__songs{
+    height: 20px;
+    width: 10vw;
+}
+
+.skeleton_album_header__others{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
+
+/* .skeleton_album_header__others {
+} */
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (min-width: 550px) and (max-width: 991px) {
+    
+    .skeleton_album_header__sub-heading {
+        width: 10vw;
+        height: 15px;
+    }
+
+    .skeleton_album_header__heading {
+        width: 35vw;
+        height: 45px;
+    }
+    .skeleton_album_header__others {
+        width: 10vw;
+        height: 15px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .skeleton_album_header {
+        min-height: 40vh;
+    }
+    .skeleton_album_header {
+        padding: 1rem;
+
+        flex-direction: column;
+        gap: .7rem;
+        align-items: center;
+    }
+
+    .skeleton_album_header__cover-img {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .skeleton_album_header__sub-heading {
+        display: none;
+    }
+
+    .skeleton_album_header__heading {
+        width: 75vw;
+        height: 45px;
+        /* height: 25vh; */
+        /* font-size: max(6vw, 1.4rem);
+        margin-top: 0; */
+    }
+
+    .skeleton_album_header__content {
+        align-items: center;
+    }
+
+    .skeleton_album_header__others {
+        margin-top: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .skeleton_album_header__owner,
+    .skeleton_album_header__songs {
+        width: 20vw;
+        height: 20px;
+    }
+
+}
