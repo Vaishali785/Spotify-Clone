@@ -1,0 +1,108 @@
+.playlist_header{
+    height: 40vh;
+    background: linear-gradient(45deg , white , transparent);
+    padding: 2rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.playlist_header__cover-img{
+    /* width: 20%; */
+    aspect-ratio: 1/1;
+    /* border: 1px solid white; */
+    filter: drop-shadow(4px 4px 10px black);
+}
+
+.playlist_header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: stretch; */
+}
+.playlist_header__sub-heading{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* font-weight: 300; */
+}
+.playlist_header__heading{
+    font-size: min(4vw,6vw);
+    margin-top: .5rem;
+    /* font-size: clamp(3rem, 3rem + 3vw, 4vw); */
+    font-weight: 900;
+    line-height: 1;
+}
+
+.playlist_header__description{
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-left: 5px;
+    font-size: 13px;
+    opacity: .7;
+}
+
+.playlist_header__others,
+.playlist_header__owner{
+    display: flex;
+    align-items: center;
+}
+.playlist_header__others {
+    gap: 1rem;
+    font-size: 13px;
+    margin-bottom: .5rem;
+}
+.playlist_header__owner-img{
+    width: 30px;
+}
+.playlist_header__owner{
+    font-weight: bold;
+}
+.playlist_header__other-separator{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+}
+
+.playlist_header__artists{
+
+}
+.playlist_header__song-count{
+
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 550px) {
+    .playlist_header {
+        padding: 1rem;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .playlist_header__cover-img {
+        width: 25vh;
+    }
+    .playlist_header__sub-heading {
+        font-size: 13px;
+        display: none;
+    }
+    .playlist_header__heading {
+        font-size: 6vw;
+        margin-top: 0;
+    }
+    .playlist_header__description {
+        display: none;
+    }
+    .playlist_header__others {
+        margin-top: .5rem;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}
