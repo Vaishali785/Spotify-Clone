@@ -1,0 +1,16 @@
+.item-img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item-details{}
+
+.item-details__name{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-block: .3rem;
+}
+
+.item-details__description{
+    font-size: .7rem;
+}
