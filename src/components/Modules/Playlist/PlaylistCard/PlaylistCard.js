@@ -16,8 +16,6 @@ const PlaylistCard = ({ item }) => {
                 </div>
                 <div className={`${classes["item-details__description"]} text-no-hover truncate-description`}>{removeHTMLFromContent(item.description)}</div>
             </div>
-            {/* <Link to={`/playlist/${item.id}`}>
-            </Link> */}
         </HoverableCard>
     )
 }
