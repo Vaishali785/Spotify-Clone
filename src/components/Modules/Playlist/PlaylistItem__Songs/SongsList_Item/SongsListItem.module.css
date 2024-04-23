@@ -1,0 +1,149 @@
+.playlist-row{
+    display: grid;
+    grid-template-columns: .2fr 2fr 1.5fr .3fr .3fr .3fr;
+    align-items: center;   
+    padding: 1rem; 
+    /* margin-bottom: .3rem; */
+}
+
+.playlist-row__index,.justify-self-center{
+    justify-self: center;
+}
+
+.playlist-row__title{
+    font-size: 16px;
+}
+.playlist-row__img{
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px solid white;
+    /* border-radius: 2px; */
+    /* overflow: hidden; */
+}
+.playlist-row__options{
+
+}
+
+.playlist-row__songDetails{
+    margin-left: .7rem;
+}
+.playlist-row__artists{
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.playlist-row__artistName{
+    display: inline-block;
+    
+}
+
+.playlist-row__song{
+    display: flex;
+    align-items: center;
+}
+
+/* -----------low opacity ----------- */
+.playlist-row__artistSeparator,
+.playlist-row__time,
+.playlist-row__options,
+.playlist-row__index,
+.playlist-row__like{
+    opacity: .6;
+}
+
+.playlist-row__album{
+    font-size: .8rem;
+    opacity: .8;
+    padding-inline: 10px;
+}
+
+/* ----------like button---------------- */
+.playlist-row__like,
+.playlist-row__likeSvg{
+    transition: all .2s ease-in-out;
+}
+.playlist-row__like:hover{
+    opacity: 1;
+}
+.playlist-row__like:hover .playlist-row__likeSvg{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.playlist-row__liked .playlist-row__likeSvgGreen {
+    fill: var(--theme-color-like) ;
+    opacity: 1;
+}
+.playlist-row__artistLink{}
+
+
+
+.current-playing .playlist-row__title {
+    color: var(--theme-color);
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SONG ROW MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media screen and (max-width:991px) {
+    .playlist-row {
+            grid-template-columns: .2fr 1.9fr 1fr 0.3fr 0.3fr 0.3fr;
+        }
+    /* .playlist-row__time {
+        display: none;
+    } */
+    .playlist-row__artistLink{
+        pointer-events: none;
+    }
+    .playlist-row__artists{
+        margin-top: .3rem;
+    }
+}
+
+/* @media screen and (min-width:781px) and (max-width: 991px) {
+
+} */
+@media screen and (max-width:780px) {
+    .playlist-row {
+        /* grid-template-columns: 2fr 0.3fr 0.3fr; */
+        padding: 0.6rem 1.3rem;
+    }
+
+    .playlist-row__album {
+        display: none;
+    }
+    .playlist-row__index{
+        display: none;
+    }
+    .playlist-row__time {
+        justify-self: flex-end;
+        display: none;
+    }
+    .playlist-row__options{
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:780px) {
+    .playlist-row {
+            grid-template-columns: 1.9fr 0.2fr 0.2fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .playlist-row {
+        grid-template-columns: 1.8fr 0.2fr;
+        /* padding: 0.6rem 1.3rem; */
+    }
+    .playlist-row__like,
+    .playlist-row__liked {
+        display: none;
+    }
+    /* .playlist-row__index, */
+    /* } */
+    /* .playlist-row__album {
+        display: none;
+    /* } */ 
+    
+}
