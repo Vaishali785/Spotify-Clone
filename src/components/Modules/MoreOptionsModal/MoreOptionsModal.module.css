@@ -1,0 +1,90 @@
+.options-modal{
+    position: absolute;
+    right: 30px;
+    top: 85%;
+    bottom: unset;
+    background-color: var(--card-bg);
+    z-index: 8;
+    padding-block: 1rem;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    min-width: 270px;
+}
+
+/* -20+4,-19+4,-18+4,-17+4  */
+.SongsListItem_playlist-row__L90le:nth-child(20){ 
+    color: red;
+    background-color: red;
+    bottom: 85%;
+    top: unset;
+}
+
+.modal-shadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+
+.options-modal_playlist:hover {
+
+}
+
+.options-modal_playlist__text-with-icon{
+    display: flex;
+    align-items: center;
+}
+
+.options-modal_album{
+
+}
+
+.options-modal_artist{
+
+}
+
+.options-modal_liked{
+
+}
+
+.more-options{
+    padding: 1rem 2.5rem;
+    width: 100%;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Absolute with Row */
+@media (hover: none) {
+    .options-modal {
+        position: fixed;
+        bottom: 0;
+        z-index: 999991;
+        width:100%;
+        left: 0;
+        right: unset;
+        top: unset;
+        /* box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5); */
+
+
+
+        /* background: var(--noise-bg), #5b2911; */
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        box-shadow: 0px 0px 10px 5px #484646;
+    }
+        .modal-shadow {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999000;
+            background: rgba(0, 0, 0, .5);
+        }
+}
+
