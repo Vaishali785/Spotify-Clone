@@ -1,0 +1,60 @@
+.options-modal__list{
+    position: absolute;
+    right: 100%;
+    background: var(--card-bg);
+    top: 0rem;
+    max-height: 320px;
+    overflow-y: scroll;
+    padding-block: .5rem;
+    z-index: 9;
+    filter: drop-shadow(2px 4px 6px black);
+    min-width: max-content;
+    border-radius: 5px;
+}
+
+.options-modal__list_item{
+    padding: 1rem 1.5rem;
+    list-style: none;
+}
+
+.options-modal__heading{
+    display: none;
+
+}
+
+
+
+
+@media (hover: none) {
+    .options-modal__list {
+        left: 0;
+        top: -40vh;
+        bottom: 0;
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding-block: 1rem;
+        max-height: unset;
+        padding-block: 1.5rem;
+        padding: 1rem;
+        overflow-y: unset;
+    }
+    .options-modal__heading {
+        display: block;
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 1px solid white;
+        /* margin-bottom: 2rem; */
+        padding: 1rem 1.5rem;
+        /* position: fixed;
+        top: 0; */
+        /* list-style: none; */
+        left: 2.5%;
+        width: 95%;
+        /* background: green; */
+        /* margin: auto; */
+        /* text-align: center; */
+    /* list-style: none; */
+    }
+}
