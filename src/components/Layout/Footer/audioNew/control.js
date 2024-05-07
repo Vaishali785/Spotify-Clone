@@ -87,7 +87,7 @@ const Control = ({ audioRef, sliderRef, duration, setTimeProgress }) => {
                 </button>
                 <input type="range" min={0} max={100} value={volume} onChange={(e) => setVolume(e.target.value)}
                     style={{
-                        background: `linear-gradient(to top, #1db954 ${volume}%, #ccc ${volume}%)`,
+                        background: `linear-gradient(to bottom, #1db954 ${volume}%, #ccc ${volume}%)`,
                     }}
                 />
             </div>
