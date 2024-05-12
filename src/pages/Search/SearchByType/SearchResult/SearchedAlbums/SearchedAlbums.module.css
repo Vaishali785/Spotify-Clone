@@ -1,0 +1,71 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ALBUMS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
+.searched_albums_container {}
+
+/* .searched_albums_list-heading{
+    margin-block: 1rem;
+} */
+
+.searched_albums_list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding-right: 1rem;
+}
+
+.searched_albums_list-item {}
+
+.searched_albums_list-item--img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+.searched_albums_list-item--details {}
+
+
+
+.searched_albums_list-item--name {
+    margin-block: .5rem;
+
+}
+
+
+
+.searched_albums_list-item--date {
+    font-size: 0.9rem;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 991px) {
+    .searched_albums_list {
+        padding-right: 0rem;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .searched_albums_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+    .searched_albums_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .searched_albums_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 300px) {
+    .searched_albums_list{
+        grid-template-columns: 1fr;
+    }
+}
