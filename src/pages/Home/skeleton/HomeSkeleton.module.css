@@ -1,0 +1,21 @@
+.skeleton-home {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 25vw 1fr;
+    height: 100vh;
+}
+
+.skeleton-home-sidebar{
+    grid-row: 1/-2;
+        padding: 2rem;
+}
+.skeleton-home-main {
+    grid-row: 1/-2;
+    grid-column: 2/-1;
+    padding: 2rem;
+}
+
+.skeleton-home-footer {
+    grid-column: 1/ -1;
+    padding: 1rem;
+}
