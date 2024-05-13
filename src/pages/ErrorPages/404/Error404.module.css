@@ -1,0 +1,27 @@
+.error_status{
+    font-size: 10rem;
+    font-weight: 900;
+    background: linear-gradient(0deg, #00d855 45%, white 50%, #00d855 65%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* filter: drop-shadow(2px 2px 4px 10px rgba(112, 145, 115, 0.6)); */
+}
+
+.error-btns-wrap{
+    display: flex;
+    gap: 1rem;
+    margin-block: 7rem;
+    justify-content: center;
+}
+
+.error-back-btn,
+.error-home-btn{
+    color: white;
+    background-color: #1db954;
+    padding: .8rem 2.3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
