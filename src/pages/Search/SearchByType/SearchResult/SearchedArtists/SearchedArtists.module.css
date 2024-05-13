@@ -1,0 +1,65 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ARTISTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
+.searched_artist_container {}
+
+/* .searched_artist_list-heading {
+    margin-block: 1rem;
+} */
+
+.searched_artist_list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding-right: 1rem;
+}
+
+.searched_artist_list-item {}
+
+.searched_artist_list-item--img {
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.searched_artist_list-item--name {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    /* margin-bottom: .3rem; */
+
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 991px) {
+    .searched_artist_list {
+        padding-right: 0rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .searched_artist_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+    .searched_artist_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .searched_artist_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .searched_artist_list {
+        grid-template-columns: 1fr;
+    }
+}
