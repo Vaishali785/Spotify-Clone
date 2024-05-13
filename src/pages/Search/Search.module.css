@@ -1,0 +1,64 @@
+.search-results{}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.searched_song_container {
+    width: 60%;
+    /* float: right; */
+}
+
+.searched_section-heading {
+    margin-block: 1rem;
+    font-size: 2rem;
+}
+.mt-4{
+    margin-top: 4rem;
+}
+
+.search-copyright{
+    margin-inline: 1rem;
+    margin-top: 0rem;
+    border-radius: 5px;
+}
+
+.search-result-copyright{
+    margin-right: 1rem;
+    border-radius: 5px;
+    margin-bottom: 0;
+    font-size: .6rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 991px) {
+    .search-results{
+        padding: 1rem;
+    }
+    .searched_song_container {
+        width: 100%;
+    }
+    .mt-4 {
+        margin-top: 2rem;
+    }
+    .search-result-copyright {
+        margin-inline: 1rem;
+        margin-block: 0;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .searched_section-heading {
+        margin-top: 0;
+    }
+    .search-result-copyright {
+        margin-inline: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+}
