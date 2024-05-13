@@ -1,0 +1,10 @@
+* Options --> Save / Remove from liked songs 
+
+1. Click on Three dots icon,let's say for playlist, SongsListItem.js.
+2. On clicking this sets a prop coming from parent(PlaylistSongsList.js) setShowOptions=track_id, else sets to be false if it is already the selected row. 
+3. In SongsListItem.js, created a variable called "showOptionsRow" which checks if the id set in the "setShowOptions" is same as the row track id, if yes then true else false.
+4. Based on this variable(showOptionsRow) show modal of that row. 
+5. If this variable(showOptionsRow) is true, then it adds a class to the row "row-hovered" which gives hovering effect to the selected row.
+
+
+* Options --> 
