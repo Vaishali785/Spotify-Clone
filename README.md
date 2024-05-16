@@ -19,10 +19,11 @@ For a live demonstration, explore [Spotify Clone Demo](https://spotifybyvaishali
 The Spotify Clone project provides users with a seamless music streaming experience similar to the popular Spotify platform. With a clean and intuitive interface, users can discover new music, create playlists, and enjoy their favorite tracks anywhere, anytime.
 
 <div>
-   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/loginPage.png' width='250px'/> &nbsp;&nbsp;&nbsp;&nbsp;
-   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/HomePage.png' width='250px'  /> &nbsp;&nbsp;&nbsp;&nbsp;
-   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/DetailsPage.png' width='250px' />    
-   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/DetailsPage.png' width='250px' />    
+   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/loginPage.png' alt='Login Page' width='250px'/> &nbsp;&nbsp;&nbsp;&nbsp;
+   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/HomePage.png' alt='Home Page' width='250px'  /> &nbsp;&nbsp;&nbsp;&nbsp;
+   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/DetailsPage.png' alt='Details Page' width='250px' />    
+   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/Search.png' alt='Search Page' width='250px' />    
+   <img src='https://github.com/Vaishali785/Spotify-Clone/blob/main/src/assets/screenshots/SearchResult.png' alt='Search Result Page' width='250px' />    
 </div>
 
 ## Pages
