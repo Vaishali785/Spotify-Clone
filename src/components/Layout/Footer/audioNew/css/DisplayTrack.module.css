@@ -1,33 +1,64 @@
-.audio-slider{
-
+.audio-slider {
 }
 
-
-.audio-info{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+.audio-info {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }
 
-
-.thumb img{
-    width: 50px;
+.thumb img {
+	width: 50px;
 }
 
-.audio-text{
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
+.audio-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
 }
 
-
-.audio-name{
-    font-size: 16px;
+.audio-name {
+	font-size: 16px;
 }
 
-.audio-singer{
-    font-size: 12px;
-    color: white;
-    opacity: .7;
-    /* margin-top: .5rem; */
+.audio-singer {
+	font-size: 12px;
+	color: white;
+	opacity: 0.7;
+	/* margin-top: .5rem; */
+}
+
+.skeleton_audio-slider {
+}
+
+.skeleton_audio-info {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.skeleton_thumb {
+	width: 50px;
+	height: 50px;
+}
+
+.skeleton_audio-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.skeleton_audio-name {
+	font-size: 16px;
+	height: 20px;
+	width: 150px;
+}
+
+.skeleton_audio-singer {
+	font-size: 12px;
+	color: white;
+	opacity: 0.7;
+	height: 15px;
+	width: 100px;
+	/* margin-top: .5rem; */
 }
